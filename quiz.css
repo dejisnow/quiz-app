@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+}
+body {
+background-image:linear-gradient(160deg, #4adede,#1aa3df,#4adede,#4adede);
+    
+}
+main{
+    
+    color:#1cafeec;
+    height:90vh;
+    width:100%;
+}
+h3{
+    text-align:center;
+    margin-top:20px;
+    
+}
+.queDiv{
+    width:100%;
+    height:50%;
+    
+    
+}
+.que{
+    width:90%;
+    height:100px;
+    margin:20px ;
+    text-align:justify;
+
+}
+.ans{
+    width:100%;
+    height:20px;
+    margin:20px 0 ;
+    text-align:center;
+}
+button{
+    padding:20px;
+}
+.true{
+    color:blue;
+}
+.false{
+    color:red;
+}
