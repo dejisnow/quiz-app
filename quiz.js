@@ -4,6 +4,10 @@ let que = document.querySelector(".que")
 let ans = document.querySelector(".ans")
 let tru = document.querySelector(".tru")
 let fals = document.querySelector(".fals")
+let see = document.querySelector(".see")
+let score = document.querySelector(".score")
+
+let scores = 0;
 /*let array = [0,1,2,3,4,5,6,7]
   
    
@@ -32,8 +36,7 @@ let fals = document.querySelector(".fals")
    
    function display(){
   let queRandom = Math.floor(Math.random() * array.length)
-  let answer =      
- queDiv.innerHTML = array[queRandom].filter((x,y,z)=> {return( y >1)})
+let answer =array[queRandom].filter((x,y,z)=> {return( y > 0)}).map(x => x )
      
  queDiv.innerHTML = array[queRandom].filter((x,y,z)=> {return( y < 1)}).map((x)=> {
            return (`<h3>Question </h3>
@@ -42,21 +45,26 @@ let fals = document.querySelector(".fals")
        })
        
        tru.addEventListener("click",(e)=>{
-           if(answer == e.target.value){
-               console.log("correct")
-           }else{
-               console.log("incorrect")
-           }
+ if(answer == e.target.textContent.trim()){
+ display()
+ score.innerHTML = scores+=10
+     console.log("true")
+ }else{
+     alert("You are wrong, Game over ")
+ }
+           
        },{once:true})
        fals.addEventListener("click",(e)=>{
-           if(answer == e.target.value){
-               console.log("correct")
-           }else{
-               console.log("incorrect")
-           }
+           if(answer == e.target.textContent.trim()){
+           display()
+       score.innerHTML = scores+=10
+     console.log("true")
+ }else{
+     alert("You are wrong, Game over ")
+ }
        },{once:true})
        
-   
+ 
    
       
   }
