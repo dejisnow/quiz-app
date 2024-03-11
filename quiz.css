@@ -5,6 +5,7 @@
 }
 body {
 background-image:linear-gradient(160deg, #4adede,#1aa3df,#4adede,#4adede);
+position:relative ;
     
 }
 main{
@@ -31,14 +32,54 @@ h3{
     text-align:justify;
 
 }
+.h-score{
+    margin-top:10px;
+}
+.hscore{
+    color:#02a00a;
+}
+.scoreDiv{
+    margin-left:10px;
+    margin-top:20px;
+    gap:10px;
+    
+}
 .ans{
     width:100%;
     height:20px;
     margin:20px 0 ;
     text-align:center;
 }
-button{
-    padding:20px;
+.score{
+    color:red;
+    text-align:center ;
+    font-weight:700;
+}
+.nex{
+    padding:10px;
+}
+.nexDiv{
+    margin-top:40px;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:70%;
+    left:50%;
+}
+.tru{
+    background-color:#00ff2f;
+    border:0;
+    border-radius:10px;
+}
+.fals{
+    background-color:#2faaf2;
+    border:0;
+    border-radius:10px;
+}
+.tru,.fals{
+    padding:18px;
+    margin:0 5px;
+
 }
 .true{
     color:blue;
