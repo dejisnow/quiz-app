@@ -6,6 +6,7 @@ let tru = document.querySelector(".tru")
 let fals = document.querySelector(".fals")
 let see = document.querySelector(".see")
 let score = document.querySelector(".score")
+let hscore = document.querySelector(".hscore")
 
 let scores = 0;
 /*let array = [0,1,2,3,4,5,6,7]
@@ -47,20 +48,28 @@ let answer =array[queRandom].filter((x,y,z)=> {return( y > 0)}).map(x => x )
        tru.addEventListener("click",(e)=>{
  if(answer == e.target.textContent.trim()){
  display()
- score.innerHTML = scores+=10
+ scores+=10
+ score.innerHTML = scores
      console.log("true")
  }else{
+     hscore.innerHTML  = scores
+     scores = 0
      alert("You are wrong, Game over ")
+     
  }
            
        },{once:true})
        fals.addEventListener("click",(e)=>{
            if(answer == e.target.textContent.trim()){
            display()
-       score.innerHTML = scores+=10
+       scores+=10
+ score.innerHTML = scores
      console.log("true")
  }else{
+     hscore.innerHTML = scores
+     scores = 0
      alert("You are wrong, Game over ")
+     
  }
        },{once:true})
        
