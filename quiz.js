@@ -6,9 +6,10 @@ let tru = document.querySelector(".tru")
 let fals = document.querySelector(".fals")
 let see = document.querySelector(".see")
 let score = document.querySelector(".score")
-let hscore = document.querySelector(".hscore")
+let totalq = document.querySelector(".totalq")
 
 let scores = 0;
+let totalQue = 0;
 /*let array = [0,1,2,3,4,5,6,7]
   
    
@@ -49,11 +50,12 @@ let answer =array[queRandom].filter((x,y,z)=> {return( y > 0)}).map(x => x )
  if(answer == e.target.textContent.trim()){
  display()
  scores+=10
+ totalQue++
  score.innerHTML = scores
+ totalq.innerHTML   = totalQue
      console.log("true")
  }else{
-     hscore.innerHTML  = scores
-     scores = 0
+     
      alert("You are wrong, Game over ")
      
  }
@@ -63,11 +65,12 @@ let answer =array[queRandom].filter((x,y,z)=> {return( y > 0)}).map(x => x )
            if(answer == e.target.textContent.trim()){
            display()
        scores+=10
+       totalQue++
  score.innerHTML = scores
+ totalq.innerHTML   = totalQue
      console.log("true")
  }else{
-     hscore.innerHTML = scores
-     scores = 0
+    
      alert("You are wrong, Game over ")
      
  }
