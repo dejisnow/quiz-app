@@ -4,7 +4,7 @@
     box-sizing:content-box;
 }
 body {
-background-image:linear-gradient(160deg, #4adede,#1aa3df,#4adede,#4adede);
+background-image:linear-gradient(160deg, #4adede,#1aa3df,#4adede,#4adede,#4daded);
 position:relative ;
     
 }
@@ -14,7 +14,7 @@ main{
     height:90vh;
     width:100%;
 }
-h3{
+h2{
     text-align:center;
     margin-top:20px;
     
@@ -30,6 +30,7 @@ h3{
     height:100px;
     margin:20px ;
     text-align:justify;
+    font-weight:700;
 
 }
 .h-score{
@@ -75,6 +76,11 @@ h3{
     background-color:#2faaf2;
     border:0;
     border-radius:10px;
+}
+.gameOver{
+    text-align:center ;
+    margin:10px;
+    color:red;
 }
 .tru,.fals{
     padding:18px;
